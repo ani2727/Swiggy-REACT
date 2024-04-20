@@ -1,0 +1,60 @@
+1.NPM-> It is not NODE PACKAGE MANAGER. It doesn't have any specific full form.
+
+2.There are two types of dependencies in NPM:
+ i.devDependencies(Used during development period)
+ ii.dependencies(Used after hosting or deploying the project)
+
+3.Package.json file is the file which is used to configure the NPM and keeps track of approx all the versions.
+
+4.package-lock.json: keeps the tracks of exact version installed.
+
+5.Node Modules: Fetches all the code required for the dependencies.
+
+6.Transitive dependencies: If we install "parcel" it has its own dependencies to install and like this those files will also have the dependencies of their own 
+                            This is called Transitive dependency.
+
+7. JSX- JavaScript Syntax: is not a part of React it is separate from react.
+Even without JSX also we can write the code.
+
+8. JSX is not HTML inside JS. It is HTML like syntax.
+  - To write attribute in JSX(html like code) follow camelCase. eg.className,tabIndex,etc, ..
+
+9. Babel is a JavaScript Compiler also converts JSX code to React code
+
+
+10. There are two types of Imports/Exports
+  i.default import/export :
+      ---> Used only when single component is to be exported
+      syntax: Export: export default (nameoftheexport eg:logo);
+              Import: import logo from "path"
+  ii.named import/export 
+    ---> Used when more things component to be exported.
+    syntax: Export: export const (name eg: logo) = {contentofthelogo};
+            Import: import {logo} from "path"
+
+11.Hooks: Hooks are nothing but the simple javascript functions with super powers in it.
+
+12. Reconsciliation algorithm:React Fiber(From React-16):
+    --->React is fast because it is doing efficient DOM manipulation using virtual DOM.
+
+
+Swiggy-API: https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
+
+Hooks:
+  React:
+    1.useState();//Mostly Used
+    2.useEffect();
+  React-Router-DOM:
+    1.useRouteError();
+
+12. ComponentDidMount --> used for making API calls as it is not executed till the Render funtion is completly executed.
+                          so we will not be waiting for the API to load instead we render first and then try to fetch the API data.
+                          That's why we use UseEffect() method and make API class as it also executes after the total rendering of component.
+                  
+13. React has 2 phases:
+  1.Render Phase
+  2.Commit Phase
+
+14.lazy and suspense: Important to divide the data into chunks.
+    lazy: it will make sure that the specific component is not loaded until demand.
+    suspense: It will have fall back function which is used to show or render something on the screen until the component is loaded.

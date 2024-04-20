@@ -1,0 +1,24 @@
+Everything in React is a Component.
+
+There are two types of Components in React
+1.Class Based Components.-OLD WAY
+2.Functional Components.-(Just a normal JavaScript Function which returns a JSX code)
+
+Q:What is component composition?
+Ans: Wrapping one component into another
+eg:
+
+const JsxHeading = ()=> (
+    <h2 className="head" tabIndex="5">
+        Hello All!
+    </h2>
+    );
+
+const Heading = () => (
+    <div id="container">
+
+        <JsxHeading />
+
+        <h1 className="heading">Hello From React JSX</h1>
+    </div>
+)
