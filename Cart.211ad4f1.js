@@ -1,0 +1,2 @@
+var e=("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequire6368;(0,e.register)("9lSny",function(i,n){Object.defineProperty(i.exports,"__esModule",{value:!0,configurable:!0}),Object.defineProperty(i.exports,"default",{get:function(){return r},set:void 0,enumerable:!0,configurable:!0});var l=e("5aRSq"),r=()=>(0,l.jsx)("div",{children:(0,l.jsx)("h1",{children:"Your items in the Cart will be visible Here"})})});
+//# sourceMappingURL=Cart.211ad4f1.js.map
