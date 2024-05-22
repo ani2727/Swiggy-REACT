@@ -39,17 +39,17 @@ const appRouter = createBrowserRouter([
                 errorElement: <Error />,
             },
             {
-                path:"/contact",
+                path:"Swiggy-REACT/contact",
                 element:<Contact />,
                 errorElement: <Error />,
             },
             {
-                path:"/restaurant/:resId",
+                path:"Swiggy-REACT/restaurant/:resId",
                 element: <RestaurantMenu />,
                 errorElement: <Error />
             },
             {
-                path:"/cart",
+                path:"Swiggy-REACT/cart",
                 element: <Suspense fallback={<Shimmer></Shimmer>}><Cart /></Suspense>,
                 errorElement: <Error />,
             },
