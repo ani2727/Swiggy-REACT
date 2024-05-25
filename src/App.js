@@ -25,31 +25,31 @@ const Cart = lazy(()=>import("./Cart"));
 
 const appRouter = createBrowserRouter([
     {
-        path: "Swiggy-REACT/",
+        path: "/",
         element: <AppLayout />,
         children: [
             {
-                path:"Swiggy-REACT/",
+                path:"/",
                 element: <Body />,
                 errorElement: <Error />,
             },
             {
-                path:"Swiggy-REACT/about",
+                path:"/about",
                 element: <Suspense ><About /></Suspense>,
                 errorElement: <Error />,
             },
             {
-                path:"Swiggy-REACT/contact",
+                path:"/contact",
                 element:<Contact />,
                 errorElement: <Error />,
             },
             {
-                path:"Swiggy-REACT/restaurant/:resId",
+                path:"/restaurant/:resId",
                 element: <RestaurantMenu />,
                 errorElement: <Error />
             },
             {
-                path:"Swiggy-REACT/cart",
+                path:"/cart",
                 element: <Suspense fallback={<Shimmer></Shimmer>}><Cart /></Suspense>,
                 errorElement: <Error />,
             },
